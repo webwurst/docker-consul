@@ -1,0 +1,6 @@
+
+$ docker run -p 8400:8400 -p 8500:8500 -p 8600:53/udp -h node1 webwurst/consul consul agent -config-dir /etc/consul -server -bootstrap
+
+$ docker run -p 8400:8400 -p 8500:8500 -p 8600:53/udp -h node1 webwurst/consul consul agent -config-dir /etc/consul -server -bootstrap -ui-dir /opt/dist
+
+http://localhost:8500/ui/#
